@@ -3,6 +3,9 @@
   align-items: center;
   gap: 10px;
 }
+.bars {
+  filter: grayscale(100%);
+}
 
 .logout {
   padding: 10px;
@@ -25,8 +28,8 @@
     right: 0;
     width: 50%;
     height: calc(100vh - 100px);
-    /* background-color: var(--bg); */
-    background-color: aliceblue;
+    background-color: var(--bg);
+    /* background-color: aliceblue; */
     display: flex;
     flex-direction: column;
     align-items: center;

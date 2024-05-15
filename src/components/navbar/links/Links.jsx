@@ -4,6 +4,7 @@ import styles from "./links.module.css";
 import NavLink from "./navLink/navLink";
 import { title } from "process";
 import path from "path";
+import Image from "next/image";
 
 export default function Links() {
   const Links = [
@@ -42,12 +43,14 @@ export default function Links() {
           <NavLink item={{ title: "Login", path: "/Login" }} />
         )}
       </div>
-      <button
-        className={styles.menuButton}
+      <Image
+        src="/test.png"
+        alt=""
+        width={30}
+        height={30}
         onClick={() => setOpen((prev) => !prev)}
-      >
-        Menu
-      </button>
+        className={styles.menuButton}
+      />
       {open && (
         <div className={styles.mobileLinks}>
           {Links.map((link, index) => (
