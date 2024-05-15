@@ -28,6 +28,8 @@ export default function Links() {
   const [open, setOpen] = useState(false);
   const session = true;
   const isAdmin = true;
+
+  console.log("it works nav here");
   return (
     <div className={styles.container}>
       <div className={styles.links}>
